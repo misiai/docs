@@ -141,6 +141,14 @@ php artisan make:seeder UsersTableSeeder
 
 ![截图-1557494214](http://wimg.misiyu.cn/images/20190510/1557494214_8ce54f877e481b8.png?x-oss-process=style/first)
 
+**注意：**这里需要在laravel自带的`DatabaseSeeder.php` Call一下创建的seeder才能有效执行命令。
+
+如下图：
+
+![截图-1564278592](https://wimg.misiyu.cn/images/20190728/1564278592_17709615c39b2f8.png?x-oss-process=style/first)
+
+
+
 ## 控制器相关
 
 ### 创建控制器
@@ -861,4 +869,6 @@ $data = (new Arr())->category($categories, $pid = 0, $title = 'name', $id = 'id'
    Schema::defaultStringLength(191);
    ```
 
-   
+
+
+
